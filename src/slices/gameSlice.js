@@ -1,10 +1,10 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 //tutorial sheet from Redux
-const initialState = {
-          userHand:"",
-          computerHand:""
-}
+// const initialState = {
+//           userHand:"",
+//           computerHand:""
+// }
 
 const gameSlice = createSlice({
           name: "game",

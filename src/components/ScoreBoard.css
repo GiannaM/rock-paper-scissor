@@ -1,0 +1,34 @@
+.scoreBoard {
+    width: 700px ;
+    height: 150px;
+    margin-top: 48px;
+    border: 1px solid #ffffff;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scoreBoard_gameName {
+    /* padding: 30px; */
+}
+
+.scoreBoard_score {
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: white;
+    margin-right: 30px;
+    width: 150px;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scoreBoard_score p {
+    color: blue;
+}

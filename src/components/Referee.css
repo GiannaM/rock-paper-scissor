@@ -1,0 +1,17 @@
+.referee {
+          width: 220px;
+}
+
+.referee >h1 {
+          font-size: 56px;
+          color: white;
+}
+
+.referee > button {
+          width:220px;
+          height: 48px;
+          font-family: "barlow Condensed", sans-serif;
+          font-size: 16px;
+          border-radius: 8px;
+          outline: none;
+}
