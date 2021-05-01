@@ -16,7 +16,7 @@ const Contest= () => {
           const dispatch = useDispatch();
 
           const userHand  = useSelector(state => state.game.userHand);
-          const compHand = useSelector((state) => state.game.setComputerHand);
+          const compHand = useSelector((state) => state.game.computerHand);
 
           useEffect(() => {
                     let cpHand = hands[Math.floor(Math.random()*hands.length)];
@@ -31,12 +31,12 @@ const Contest= () => {
                               <div  className="contest_container" >
                                         <div className="contest_handContainer">
                                                   <h1>You picked</h1>
-                                                  <img  src={`/images/hand${userHand}.png`} alt=""/>
+                                                  <img  src={`/images/hand-${userHand}.png`} alt=""/>
                                         </div>
                                         {timer && <Referee/>}
                                         <div className="contest_handContainer">
                                                   <h1>The House Picked</h1>
-                                                   <img  src={`/images/hand${compHand? compHand:"Blank"}.png`} alt=""/>
+                                                   <img  src={`/images/hand-${compHand ? compHand:"blank"}.png`} alt=""/>
                                         </div>
                               </div>
                               <h1>{console.log(compHand)}</h1>

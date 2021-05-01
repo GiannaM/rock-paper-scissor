@@ -5,26 +5,31 @@ import { setScore } from "../slices/ScoreSlice";
 import "./Referee.css";
 
 const Referee = () => {
-          const userHand = useSelector(state => state.game.userHand);
-          const compHand = useSelector(state => state.game.computerHand);
+          const userHand = useSelector((state) => state.game.userHand);
+          const compHand = useSelector((state) => state.game.computerHand);
 
-          const [result, setResults] = useState("You Lose");
+          const [result, setResult] = useState("You Lose");
           const dispatch = useDispatch();
 
 
           const win  = () => {
-                    if (userHand === "Paper" && compHand ==="Rock") {
+
+                    if (userHand === "paper" && compHand ==="rock") {
                               dispatch(setScore(1));
-                              setResults("You win")
+                              setResult("You win!")
                     }
-                    if (userHand === "Rock" && compHand ==="Scissor") {
+                    if (userHand === "rock" && compHand ==="scissor") {
                                dispatch(setScore(1));
-                              setResults("You win")
+                              setResult("You win")
                     }
-                    if (userHand === "Scissor" && compHand ==="Paper") {
+                    if (userHand === "scissor" && compHand ==="paper") {
                                dispatch(setScore(1));
-                              setResults("You win")
+                              setResult("You win!")
                     }
+                    if (userHand === compHand) {
+                              setResult("No winners !")
+                    }
+
           };
           //useEffect to call the function win
           useEffect(() => {

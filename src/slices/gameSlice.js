@@ -1,17 +1,14 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 //tutorial sheet from Redux
-// const initialState = {
-//           userHand:"",
-//           computerHand:""
-// }
+const initialState = {
+          userHand:"",
+          computerHand:""
+}
 
 const gameSlice = createSlice({
           name: "game",
-          initialState:{
-            userHand: "",
-            computerHand: "",
-          },
+          initialState,
           reducers: {
                     setUserHand: (state, action) => {
                               state.userHand = action.payload;

@@ -6,13 +6,13 @@ import "./ScoreBoard.css";
 
 const ScoreBoard = () => {
 
-          const score = useSelector(state => state.score);
+          const score = useSelector((state) => state.score);
 
           return (
                     <div className= "scoreBoard">
                               <div className="scoreBoard_gameName">
                                         <div className="scoreboard_text">
-                                                  <img src= "/images/rock-paper-scissor.svg" alt="rockPaperScissorText"/>
+                                                  <img src= "/images/rock-paper-scissor.svg" alt="rockPaperScissorImages"/>
                                         </div>
                               </div>
                               <div className="scoreBoard_score">
